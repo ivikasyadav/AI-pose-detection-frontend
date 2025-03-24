@@ -1,0 +1,106 @@
+/* Ex.css - Exercise Tracker Page Styles */
+
+.exercise-tracker {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Title */
+.exercise-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* File input label */
+.file-input-label {
+    font-size: 16px;
+    color: #555;
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* File input */
+.file-input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Upload button */
+.upload-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.upload-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.upload-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Display the uploaded video preview */
+.exercise-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Stats container */
+.stats-container {
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stats-container p {
+    font-size: 16px;
+    color: #444;
+    margin: 5px 0;
+}
+
+/* Feedback text */
+.feedback {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .exercise-tracker {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .exercise-title {
+        font-size: 20px;
+    }
+
+    .upload-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}

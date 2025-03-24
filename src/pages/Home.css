@@ -1,0 +1,61 @@
+/* Home Container */
+.home-container {
+    text-align: center;
+    padding: 40px;
+    background: #f8f8f8;
+}
+
+/* Title */
+.home-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Grid Layout */
+.exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Bigger Cards */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Exercise Card */
+.exercise-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.exercise-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Exercise Image - Bigger & Fully Displayed */
+.exercise-card img {
+    width: 100%;
+    height: 300px;
+    /* Increased height */
+    object-fit: contain;
+    /* Ensures full image is visible without cropping */
+    background: #fff;
+    /* White background for better visibility */
+}
+
+/* Exercise Name */
+.exercise-card h3 {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
