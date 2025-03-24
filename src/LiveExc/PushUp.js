@@ -41,7 +41,7 @@ const PushUpCounter = () => {
             if (point.score > 0.5) {
                 ctx.beginPath();
                 ctx.arc(point.x, point.y, 5, 0, 2 * Math.PI);
-                ctx.fillStyle = "red";
+                ctx.fillStyle = "red"
                 ctx.fill();
             }
         });
