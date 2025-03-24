@@ -46,7 +46,7 @@ const ExerciseTracker = () => {
         setIsProcessing(true);
 
         try {
-            await axios.post(`https://ai-pose-detection-backend.onrender.com/${exerciseType}`, formData);
+            await axios.post(`https://ai-pose-detection-backend.onrender.com/upload-video/${exerciseType}`, formData);
         } catch (error) {
             console.error("Upload error:", error);
         } finally {
