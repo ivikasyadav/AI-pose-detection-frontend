@@ -16,6 +16,7 @@ const ExerciseTracker = () => {
     const socket = useRef(null);
 
     useEffect(() => {
+        alert('This may not work as Render does not support WebSocket connections on the free tier. ')
         socket.current = io("https://ai-pose-detection-backend.onrender.com", {
             transports: ["websocket"],
             withCredentials: true,
